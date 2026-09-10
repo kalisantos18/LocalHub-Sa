@@ -3,10 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LocalHub SA — Find local businesses near you</title>
+<title>LocalHub SA | South African Local Business Directory</title>
+<meta name="description" content="Find local businesses, events and non-profit organisations near you on LocalHub SA — South Africa's local business directory. Search by business, service, category or location.">
+<meta name="robots" content="index, follow">
+<!-- TODO: confirm the real production domain and replace this placeholder everywhere it appears (canonical, OG/Twitter URLs, JSON-LD, robots.txt, sitemap.xml) -->
+<link rel="canonical" href="https://localhubsa.co.za/">
+<meta name="theme-color" content="#0B1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230B1220'/%3E%3Cpath fill='%23F6B400' d='M12 4.5c-3 0-5.5 2.4-5.5 5.5 0 4 5.5 9.5 5.5 9.5s5.5-5.5 5.5-9.5c0-3.1-2.5-5.5-5.5-5.5zm0 7.7a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4z'/%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="LocalHub SA">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LocalHub SA | South African Local Business Directory">
+<meta property="og:description" content="Find local businesses, events and non-profit organisations near you on LocalHub SA — South Africa's local business directory.">
+<meta property="og:url" content="https://localhubsa.co.za/">
+<!-- TODO: og:image needs a real, publicly-hosted PNG/JPG (~1200x630) — none exists in this project yet, so this path is a placeholder, not a working asset -->
+<meta property="og:image" content="https://localhubsa.co.za/og-image.png">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LocalHub SA | South African Local Business Directory">
+<meta name="twitter:description" content="Find local businesses, events and non-profit organisations near you on LocalHub SA.">
+<meta name="twitter:image" content="https://localhubsa.co.za/og-image.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://localhubsa.co.za/#website",
+      "url": "https://localhubsa.co.za/",
+      "name": "LocalHub SA",
+      "description": "South Africa's local business directory — find local businesses, events and non-profit organisations near you.",
+      "inLanguage": "en-ZA",
+      "publisher": { "@id": "https://kalibredigitallabs.co.za/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://kalibredigitallabs.co.za/#organization",
+      "name": "Kalibre Digital Labs",
+      "url": "https://kalibredigitallabs.co.za",
+      "email": "support.kalibredigitallabs@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "18 Cuming Rd, Eldorado Park",
+        "addressLocality": "Soweto",
+        "addressCountry": "ZA"
+      },
+      "owns": { "@id": "https://localhubsa.co.za/#website" }
+    }
+  ]
+}
+</script>
+
 <style>
   :root{
     --navy:#0B1220;
@@ -759,7 +813,7 @@ const ICON = {
 
 /* ---------------- Site settings (configure before going live) ---------------- */
 const SETTINGS = {
-  whatsappNumber: '27625411075', // TODO: replace with the real LocalHub SA WhatsApp number
+  whatsappNumber: '27000000000', // TODO: replace with the real LocalHub SA WhatsApp number
   business: {
     firstMonthPrice: 'R248',
     recurringPrice: 'R49',
