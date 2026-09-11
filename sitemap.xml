@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  LocalHub SA is currently a single-page application: every section (Add
+  Your Business, Events, Terms & Conditions, etc.) renders via JavaScript
+  into this one URL rather than living at its own address, and there is no
+  backend/database yet — approved businesses and events don't have public
+  URLs of their own. That means this homepage is the only URL that
+  genuinely exists and is safe to list; inventing /business/... or
+  /events/... URLs here would create 404s and bad signals in Search
+  Console rather than helping indexing.
+
+  This file is static and will NOT update itself — there is no server or
+  build step behind it. Once real per-listing pages and a backend exist,
+  see generate-sitemap.js (provided alongside this file) for a ready
+  starting point to generate this file automatically from approved,
+  public listings only.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://localhubsa.co.za/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
