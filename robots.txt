@@ -1,9 +1,0 @@
-# LocalHub SA — robots.txt
-# There is currently no admin area, login, or private route on this site
-# (the admin panel was removed), so there is nothing that genuinely needs
-# to be disallowed. Update this file if/when private routes are added.
-
-User-agent: *
-Allow: /
-
-Sitemap: https://localhubsa.co.za/sitemap.xml
